@@ -1,185 +1,185 @@
-# 使用手册
+# User Manual
 
-## 插件简介
+## Plugin Introduction
 
-本插件由CubeVi开发，目前最新版本为2.0.0，支持预览，渲染图/视频的预览和保存。支持blender版本3.4-4.3. 注：由于blender4.3的API问题，该版本在预览对象的时候会出现一定的偏移，渲染功能可正常使用。
+This plugin is developed by CubeVi. The current latest version is 2.0.0. It supports previewing and saving rendered images/videos. It supports Blender versions 3.4-4.3. Note: Due to API issues in Blender 4.3, there might be some offset when previewing objects in this version. The rendering function works normally.
 
-## 插件安装
+## Plugin Installation
 
-**准备工作：**
+**Prerequisites:**
 
-windows系统
+Windows OS
 
-Blender **3.4及以上**
+Blender **3.4 and above**
 
-视版本下载适配3.4-4.0或4.1-4.3的插件。
+Download the plugin compatible with Blender 3.4-4.0 or 4.1-4.3 depending on your version.
 
-CubeVi-Swizzle-Blender_3.4-4.0.zip （不需解压）
+CubeVi-Swizzle-Blender_3.4-4.0.zip (No need to unzip)
 
-CubeVi-Swizzle-Blender_4.1-4.3.zip （不需解压）
+CubeVi-Swizzle-Blender_4.1-4.3.zip (No need to unzip)
 
-**插件安装：**
+**Plugin Installation:**
 
-打开Blender，单击左上角Edit（编辑），在弹出栏目选择Preferences（偏好设置）。
+Open Blender, click Edit in the upper left corner, and select Preferences in the pop-up menu.
 
 ![](img/image_1.png)
 
 ![](img/image_2.png)
 
-若安装了老版本的blender_preview插件，需要先卸载老版本插件。
+If an older version of the blender_preview plugin is installed, you need to uninstall the old version first.
 
 ![](img/image_uninstall.png)
 
-**Blender4.1以下：**
+**For Blender 4.1 and below:**
 
-在打开的窗口中，选择Install（安装）
+In the opened window, select Install.
 
 ![](img/image_3.png)
 
-在弹出的界面选择插件安装包（zip文件不需解压），点击右下角Install Add-on（安装插件）
+In the pop-up interface, select the plugin installation package (zip file, no need to unzip), and click Install Add-on in the lower right corner.
 
 ![](img/image_4.png)
 
-右下角提示插件安装成功，在界面中会出现3D View: CubeVi-Swizzle-Blender
+A message in the lower right corner will indicate that the plugin has been installed successfully. "3D View: CubeVi-Swizzle-Blender" will appear in the interface.
 
-勾选左侧方框启用插件
+Check the box on the left to enable the plugin.
 
 ![](img/image_5.png)
 
 ![](img/image_6.png)
 
-单击blender右上侧工具栏小箭头打开拓展栏，显示LFD扩展，插件安装成功。
+Click the small arrow on the right side of the Blender toolbar to open the extension bar. The LFD extension will be displayed, indicating successful plugin installation.
 
 ![](img/image_7.png) ![](img/image_8.png)
 
-**Blender4.1及以上：**
+**For Blender 4.1 and above:**
 
-在偏好设置的右上角小箭头中选择从磁盘安装，后续操作相同。在Blender4.2及以上插件安装后会自动启用。
+Select Install from Disk from the small arrow in the upper right corner of Preferences. Subsequent operations are the same. In Blender 4.2 and above, the plugin will be enabled automatically after installation.
 
 ![](img/image_9.png)
 
 
-## 插件使用
+## Plugin Usage
 
-**设备连接：**
+**Device Connection:**
 
-连接显示器，打开OpenStageAI并更新到最新版本2.0.1及以上（需保持打开），确保可识别到设备。 ![](img/image_11.png)
+Connect the display, open OpenStageAI and update to the latest version 2.0.1 or above (needs to remain open), and ensure the device is recognized. ![](img/image_11.png)
 
-打开blender，切换到LFD插件界面。
+Open Blender and switch to the LFD plugin interface.
 
 ![](img/image_8.png)
 
-单击连接，下方会出现连接成功字样，相机分辨率会自动切换为默认540*960。
+Click Connect. A "Connection Successful" message will appear below, and the camera resolution will automatically switch to the default 540*960.
 
 ![](img/image_13.png)
 
 
-**相机视锥设置：**
+**Camera Frustum Settings:**
 
-单击远，近剪裁片，焦平面栏，可设置远，近剪裁片及焦平面数值。
+Click on the Far, Near Clipping Plane, and Focal Plane fields to set the values for the far, near clipping planes, and focal plane.
 
-单击显示视锥，会显示相机拍摄的视锥范围以及焦平面位置。
+Click Display Frustum to show the camera's viewing frustum and the focal plane position.
 
 ![](img/image_12.png)
 
-远，近剪裁面决定了相机的渲染范围。只有在远近剪裁面围成的空间内，相机才会进行渲染。
+The far and near clipping planes determine the camera's rendering range. The camera will only render within the space enclosed by the far and near clipping planes.
 
-焦平面决定了相机拍摄的焦平面位置，在焦平面位置，相机拍摄的图像最清晰。在焦平面位置前后，相机拍摄的图像会逐渐变得模糊。
+The focal plane determines the camera's shooting focal plane position. The image captured by the camera is clearest at the focal plane. Before and after the focal plane, the image captured by the camera will gradually become blurred.
 
-在焦平面靠近相机一侧的空间内，渲染出来的图片会有入屏效果。
+In the space on the side of the focal plane closer to the camera, the rendered image will have an in-screen effect.
 
 ![](img/image_out.png)
 
-在焦平面远离相机一侧的空间内，渲染出来的图片会有出屏效果。
+In the space on the side of the focal plane further from the camera, the rendered image will have an out-of-screen effect.
 
 ![](img/image_in.png)
 
-在焦平面处的物体会有最清晰的显示效果。
+Objects at the focal plane will have the clearest display effect.
 
 ![](img/image_std.png)
 
-注意：远离焦平面的物体在焦平面处的显示效果会变得较差，甚至失去3D效果。
+Note: Objects far from the focal plane will have a poorer display effect at the focal plane, and may even lose their 3D effect.
 
 
-**文件路径设置：**
+**File Path Settings:**
 
-单击文件夹图标，将跳转到路径选择界面，选择后续图片，视频想保存的**文件夹**。
+Click the folder icon to jump to the path selection interface. Select the **folder** where you want to save subsequent images and videos.
 
 ![](img/image_file.png)
 
 
-**实时渲染预览：**
+**Real-time Rendering Preview:**
 
-在设备成功连接后，单击实时光场预览, 插件将自动识别到C1并显示光场图。
+After the device is successfully connected, click Real-time Light Field Preview. The plugin will automatically recognize C1 and display the light field image.
 
 ![](img/image_15.png)
 
-在实时渲染屏幕打开后，插件栏将被锁定，窗口将实时展示当前3D视口下活动相机的实时渲染结果。  
+After the real-time rendering screen is opened, the plugin bar will be locked, and the window will display the real-time rendering results of the active camera in the current 3D viewport.
 
-由于渲染会造成一定的性能开销，此时操作blender面板会有一定卡顿。
+Due to the performance overhead caused by rendering, operating the Blender panel may experience some lag at this time.
 
-使用**ESC**键会自动退出实时渲染。
+Press the **ESC** key to automatically exit real-time rendering.
 
-**保存预览图片：**
+**Save Preview Image:**
 
-在文件路径设置中，设置保存路径。
+Set the save path in File Path Settings.
 
 ![](img/image_18.png)
 
-单击保存宫格/光场预览图片，即可保存当前相机下png格式图片。（目前仅支持png）
+Click Save Grid/Light Field Preview Image to save the png format image under the current camera. (Currently only png is supported)
 
 ![](img/image_15.png)
 
-**保存并上传渲染图片：**
+**Save and Upload Rendered Image:**
 
-在文件路径设置中，设置保存路径。
+Set the save path in File Path Settings.
 
-单击保存视点渲染图片，即可保存40张单独的视点渲染图片。
+Click Save Viewpoint Rendered Images to save 40 individual viewpoint rendered images.
 
 ![](img/image_17.png)
 
-单击合成宫格图片，即可将40张单独的视点渲染图片合成一张宫格图片。
+Click Composite Grid Image to combine the 40 individual viewpoint rendered images into one grid image.
 
-确保平台打开，单击上传宫格图到3D图库，即可上一步生成的宫格图片上传到3D图库(宫格图最大70MB)，可从3D图库->头像->我的创作中观看。
+Ensure the platform is open. Click Upload Grid Image to 3D Gallery to upload the grid image generated in the previous step to the 3D Gallery (maximum grid image size is 70MB). You can view it from 3D Gallery -> Avatar -> My Creations.
 
-**动画渲染及上传：**
+**Animation Rendering and Upload:**
 
-在文件路径设置中，设置保存路径。
+Set the save path in File Path Settings.
 
-设置想渲染动画的开始帧-结束帧, 建议切换渲染引擎到EEVEE（Cycles渲染非常缓慢），单击渲染动画，插件会自动将选中帧范围内的每一帧宫格图渲染并保存到文件路径下。
+Set the start frame and end frame for the animation you want to render. It is recommended to switch the rendering engine to EEVEE (Cycles rendering is very slow). Click Render Animation. The plugin will automatically render each frame's grid image within the selected frame range and save it to the file path.
 
 ![](img/image_aninatiom.png)
 
-设置想合成视频的开始帧-结束帧，设置视频的帧率，单击将宫格图序列合成为视频，插件会自动将选中帧范围内的宫格图序列按照设置的视频帧率合成为output.mp4并保存到文件路径下。
+Set the start frame and end frame for the video you want to composite. Set the video frame rate. Click Composite Grid Image Sequence into Video. The plugin will automatically composite the grid image sequence within the selected frame range into output.mp4 according to the set video frame rate and save it to the file path.
 
-单击上传视频到平台，会将output.mp4上传至3D图库。 注：上传视频最大为70MB.
+Click Upload Video to Platform to upload output.mp4 to the 3D Gallery. Note: The maximum video upload size is 70MB.
 
-## 常见问题
+## FAQ
 
-Q: 我该如何退出实时预览？
+Q: How do I exit real-time preview?
 
-A: 在Blender界面摁Esc键。
+A: Press the Esc key in the Blender interface.
 
-Q: 点击设备连接，显示连接失败。
+Q: Clicking Device Connection shows "Connection Failed".
 
-A: 确保OpenStageAI打开，设备识别到。
+A: Ensure OpenStageAI is open and the device is recognized.
 
-Q: 视角里有一些黑线
+Q: There are some black lines in the view.
 
-A: 确保相机分辨率设置正确，由于相机预览会将场景中一些对象的辅助观测线渲染进去，可以通过右上角的![](img/image_20.png)隐藏让其不可见。
+A: Ensure the camera resolution is set correctly. Since the camera preview will render some auxiliary observation lines of objects in the scene, you can hide them by clicking ![](img/image_20.png) in the upper right corner to make them invisible.
 
-Q: 选项框变灰，不能点击任何功能。
+Q: The option boxes are grayed out and no functions can be clicked.
 
-A: 当前实时渲染正在进行，或者视口里没有创建任何的活动摄像机。
+A: Real-time rendering is currently in progress, or no active camera has been created in the viewport.
 
-Q: 相机渲染出来全黑。
+Q: The camera renders completely black.
 
-A: 确保直接在场景的主集合下，而非在某些子集合创建相机。
+A: Ensure the camera is created directly under the main collection of the scene, not in some sub-collections.
 
-Q: 打开实时渲染后blender变的很卡。
+Q: Blender becomes very laggy after opening real-time rendering.
 
-A: 由于blender自身的渲染引擎限制，blender中的实时预览会占用较多计算资源，同时对于带纹理的渲染对象，帧率会较低。
+A: Due to the limitations of Blender's own rendering engine, real-time preview in Blender will consume a lot of computing resources. At the same time, for rendered objects with textures, the frame rate will be lower.
 
-Q: 我保存的光场图可以分享给别人吗？
+Q: Can I share the light field image I saved with others?
 
-A: 由于不同的光场屏存在一定参数差异，同样的光场图在不同的显示器上可能会有显示差异，导致视觉错误。可以通过分享宫格图的方式分享资源
+A: Due to certain parameter differences between different light field displays, the same light field image may have display differences on different monitors, leading to visual errors. You can share resources by sharing grid images.
