@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="doc/src/512x512.png" alt="openstageAI logo" style="width:15%; ">
+  <img src="doc/doc/src/512x512.png" alt="openstageAI logo" style="width:15%; ">
   
 <h1 align="center">CubeVi-Swizzle-Blender</h1>
 
@@ -19,13 +19,13 @@
 </p>
 
 ## 项目介绍
-This SDK is developed by **CubeVi**，aims at showing the preview result of Blender on our [**Light Field Display C1**](https://www.openstageai.com/companion1), to preview, render, save and upload the images and videos.
+This SDK is developed by **CubeVi**, aims at showing the preview result of Blender on our [**Light Field Display C1**](https://www.openstageai.com/companion1), to preview, render, save and upload the images and videos.
 
 
 
 ## 版本要求
 
-This project is designed for[**Light Field Display C1**](https://www.openstageai.com/companion1),please make sure your computer is connected to the light field display correctly[**Light Field Display C1**](https://www.openstageai.com/companion1)，user manual and openstageai app downloading [click here](https://www.openstageai.com/download)
+This project is designed for [**Light Field Display C1**](https://www.openstageai.com/companion1), please make sure your computer is connected to the light field display correctly [**Light Field Display C1**](https://www.openstageai.com/companion1), user manual and openstageai app downloading [click here](https://www.openstageai.com/download)
 
 **Supporting Blender version**
 
@@ -42,15 +42,15 @@ This project is designed for[**Light Field Display C1**](https://www.openstageai
 
 ## Installation guide
 
-Installation and detailed guidance[Usage](doc/doc/usage.md)
+Installation and detailed guidance [Usage](doc/doc/usage.md)
 
 ## Usage
 
 ### Device connection
 
-1. Please make sure your computer is connected to the light field display correctly[**Light Field Display C1**](https://www.openstageai.com/companion1),and open[**OpenstageAI**](https://www.openstageai.com/download)platform（newest version）to detect the device.
+1. Please make sure your computer is connected to the light field display correctly [**Light Field Display C1**](https://www.openstageai.com/companion1), and open [**OpenstageAI**](https://www.openstageai.com/download) platform（newest version）to detect the device.
     
-2. Open blender，in edit->preference->plugin,import the plugin ZIP file installation package. If successful, you will see the LFD panel on the left.
+2. Open blender, in edit->preference->plugin,import the plugin ZIP file installation package. If successful, you will see the LFD panel on the left.
     
 3. Click the connect buttom, the SDK will detect the connected device and set the render resolution automatically.
 
@@ -58,7 +58,7 @@ Installation and detailed guidance[Usage](doc/doc/usage.md)
 
 4. By setting the front, back, and focal planes of the camera, you can achieve different effects in and out of the screen.
 
-5. Near and Far Clipping Faces: Only objects within the near and far clipping face frustum will be rendered
+5. Near and Far Clipping Faces: Only objects within the near and far clipping face frustum will be rendered.
 
 6. Focal plane: The focal plane of the camera. Objects in the focal plane will be the clearest. The side of the focal plane close to the camera will show the in-screen effect, the side of the focal plane away from the camera will show the out-screen effect, and objects far away from the focal plane will become blurry.
 
@@ -97,7 +97,7 @@ Installation and detailed guidance[Usage](doc/doc/usage.md)
 
 ## Discussion
 
-You can report any problems[here](TODO)
+You can report any problems in the issues.
 
 
 
