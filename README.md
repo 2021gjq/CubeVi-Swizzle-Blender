@@ -15,17 +15,17 @@
  <!-- this badge is too long, please place it in the last one to make it pretty --> 
 
 <p align="center">
-    👋 Join ours <a href="TODO" target="_blank">WeChat</a> 和 <a href="https://discord.gg/kAucVzbvQM" target="_blank">Discord</a> 
+    👋 Join ours <a href="https://cubevi.com/pages/contact" target="_blank">Discord</a> 
 </p>
 
 ## 项目介绍
-This SDK is developed by **CubeVi**, aims at showing the preview result of Blender on our [**Light Field Display C1**](https://www.openstageai.com/companion1), to preview, render, save and upload the images and videos.
+This SDK is developed by **CubeVi**, aims at showing the preview result of Blender on our [**Light Field Display C1**](https://cubevi.com/products/cube-c1), to preview, render, save and upload the images and videos.
 
 
 
 ## 版本要求
 
-This project is designed for [**Light Field Display C1**](https://www.openstageai.com/companion1), please make sure your computer is connected to the light field display correctly [**Light Field Display C1**](https://www.openstageai.com/companion1), user manual and openstageai app downloading [click here](https://www.openstageai.com/download)
+This project is designed for [**Light Field Display C1**](https://cubevi.com/products/cube-c1), please make sure your computer is connected to the light field display correctly [**Light Field Display C1**](https://cubevi.com/products/cube-c1), user manual and openstageai app downloading [click here](https://cubevi.com/pages/download-page)
 
 **Supporting Blender version**
 
@@ -48,7 +48,7 @@ Installation and detailed guidance [Usage](doc/doc/usage.md)
 
 ### Device connection
 
-1. Please make sure your computer is connected to the light field display correctly [**Light Field Display C1**](https://www.openstageai.com/companion1), and open [**OpenstageAI**](https://www.openstageai.com/download) platform（newest version）to detect the device.
+1. Please make sure your computer is connected to the light field display correctly [**Light Field Display C1**](https://cubevi.com/products/cube-c1), and open [**OpenstageAI**](https://cubevi.com/pages/download-page) platform（newest version）to detect the device.
     
 2. Open blender, in edit->preference->plugin,import the plugin ZIP file installation package. If successful, you will see the LFD panel on the left.
     
