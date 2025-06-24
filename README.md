@@ -8,10 +8,9 @@
 **Read this in other languages: [English](README.md), [中文](README_zh.md).**
 
 
-[![OpenStageAI](https://img.shields.io/badge/OpenStageAI-web-blue)](https://www.openstageai.com/)
+[![OpenStageAI](https://img.shields.io/badge/OpenStageAI-web-blue)](https://cubevi.com/)
 [![Blender](https://img.shields.io/badge/Blender-download-red)](https://www.blender.org/download/)
-[![Chat](https://img.shields.io/badge/chat-discord-blue)](https://discord.gg/kAucVzbvQM)
-[![Chat](https://img.shields.io/badge/chat-Wechat-yellow)](TODO)
+[![Chat](https://img.shields.io/badge/chat-discord-blue)](https://cubevi.com/pages/contact)
  <!-- this badge is too long, please place it in the last one to make it pretty --> 
 
 <p align="center">
