@@ -63,7 +63,9 @@ Select Install from Disk from the small arrow in the upper right corner of Prefe
 
 **Device Connection:**
 
-Connect the display, open OpenStageAI and update to the latest version 2.0.1 or above (needs to remain open), and ensure the device is recognized. ![](img/image_11.png)
+Connect the display, open OpenStageAI and update to the latest version 2.0.1 or above (needs to remain open), and ensure the device is recognized. 
+
+![](img/image_11.png)
 
 Open Blender and switch to the LFD plugin interface.
 
@@ -78,7 +80,7 @@ Click Connect. A "Connection Successful" message will appear below, and the came
 
 Click on the Far, Near Clipping Plane, and Focal Plane fields to set the values for the far, near clipping planes, and focal plane.
 
-Click Display Frustum to show the camera's viewing frustum and the focal plane position.
+Click Show Frustum to show the camera's viewing frustum and the focal plane position.
 
 ![](img/image_12.png)
 
@@ -126,7 +128,7 @@ Set the save path in File Path Settings.
 
 ![](img/image_18.png)
 
-Click Save Grid/Light Field Preview Image to save the png format image under the current camera. (Currently only png is supported)
+Click Save Quilt Preview Image to save the png format image under the current camera. (Currently only png is supported)
 
 ![](img/image_15.png)
 
@@ -134,13 +136,13 @@ Click Save Grid/Light Field Preview Image to save the png format image under the
 
 Set the save path in File Path Settings.
 
-Click Save Viewpoint Rendered Images to save 40 individual viewpoint rendered images.
+Click Save Multiview Render Pictures to save 40 individual viewpoint rendered images.
 
 ![](img/image_17.png)
 
-Click Composite Grid Image to combine the 40 individual viewpoint rendered images into one grid image.
+Click Synthesize Quilt Image to combine the 40 individual viewpoint rendered images into one quilt image.
 
-Ensure the platform is open. Click Upload Grid Image to 3D Gallery to upload the grid image generated in the previous step to the 3D Gallery (maximum grid image size is 70MB). You can view it from 3D Gallery -> Avatar -> My Creations.
+Ensure the platform is open. Click Upload Quilt Picture to 3D Gallery to upload the grid image generated in the previous step to the 3D Gallery (maximum grid image size is 70MB). You can view it from 3D Gallery -> Avatar -> My Creations.
 
 **Animation Rendering and Upload:**
 
